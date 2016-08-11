@@ -1,15 +1,22 @@
 {
-  "version": "1.0.0-*",
-
+    "authors": [ "Agile Partner S.A." ],
     "dependencies": {
         "NEST": "2.4.3",
         "NETStandard.Library": "1.6.0",
         "NLog": "4.4.0-betaV15"
     },
-
-  "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
-    }
-  }
+    "frameworks": {
+        "netstandard1.6": {
+            "imports": "dnxcore50"
+        }
+    },
+    "scripts": {
+        "postcompile": [ "dotnet pack --no-build --version-suffix %project:Version% project.json" ]
+    },
+    "packOptions": {
+        "summary": "An NLog extension to use elasticSearch as logging target on .NET Core.",
+        "licenseUrl": "https://github.com/agilepartner/AgilePartner.NLog.ElasticSearch",
+        "owners": [ "Agile Partner S.A." ]
+    },
+    "version": "1.0.0-*"
 }
