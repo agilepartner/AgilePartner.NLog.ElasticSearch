@@ -3,10 +3,10 @@ An NLog extension to use elasticSearch as logging target on .NET Core.
 
 To use it follow the steps below :
 
-# 1) Install the nuget package :
+## 1) Install the nuget package :
 Install-Package AgilePartner.NLog.ElasticSearch
 
-# 2) Update your nlog configuration file
+## 2) Update your nlog configuration file
   - add the elasticSearch extension
   - add the elasticSearch target
   - define a new rule
@@ -37,11 +37,11 @@ Install-Package AgilePartner.NLog.ElasticSearch
 </nlog>
 ```
 
-#Parameters
+## Parameters
 
 You have to provide 3 parameters in the target part :
-- uri : the uri of your elasticSearch node
-- index :  the index to write to
-- documentType : the document type to use
+- *uri* : the uri of your elasticSearch node
+- *index* :  the index to write to
+- *documentType* : the document type to use
 
 If there is any issue during the logging in elasticSearch it will be logged by NLog in the "internalLogFile" defined in the configuration file.
