@@ -4,7 +4,9 @@ An NLog extension to use elasticSearch as logging target on .NET Core.
 To use it follow the steps below :
 
 ## 1) Install the nuget package :
-Install-Package AgilePartner.NLog.ElasticSearch
+```bash
+Install-Package AgilePartner.NLog.ElasticSearch -Pre
+```
 
 ## 2) Update your nlog configuration file
   - add the elasticSearch extension
