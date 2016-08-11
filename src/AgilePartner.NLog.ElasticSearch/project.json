@@ -10,13 +10,12 @@
             "imports": "dnxcore50"
         }
     },
-    "scripts": {
-        "postcompile": [ "dotnet pack --no-build --version-suffix %project:Version% project.json" ]
-    },
     "packOptions": {
         "summary": "An NLog extension to use elasticSearch as logging target on .NET Core.",
-        "licenseUrl": "https://github.com/agilepartner/AgilePartner.NLog.ElasticSearch",
-        "owners": [ "Agile Partner S.A." ]
+        "licenseUrl": "https://github.com/agilepartner/AgilePartner.NLog.ElasticSearch"
+    },
+    "scripts": {
+        "postcompile": [ "dotnet pack --no-build --version-suffix alpha project.json" ]
     },
     "version": "1.0.0-*"
 }
